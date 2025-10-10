@@ -24,15 +24,18 @@ public class MainController {
         String email = emailField.getText();
 
         if (idade == null || idade.trim().isEmpty()) {
-            showAlert("Por Favor, coloque a sua idade");   
+            showAlert("Por Favor, coloque a sua idade");
+            return;  
         }
 
         if (email == null || email.trim().isEmpty()) {
-            showAlert("Por Favor, coloque o seu email");   
+            showAlert("Por Favor, coloque o seu email");
+            return;  
         }
         
         if (nome == null || nome.trim().isEmpty()) {
-            showAlert("Por Favor, coloque o seu nome");   
+            showAlert("Por Favor, coloque o seu nome"); 
+            return;
         }     
 
     }
